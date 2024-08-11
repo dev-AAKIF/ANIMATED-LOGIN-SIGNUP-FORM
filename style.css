@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to bottom, #cc91b5 30%, #348d92 65%, #111 100%); */
+    /* background: linear-gradient(to right, #43c6ac, #191654); */
+    /* background: linear-gradient(to right, #f0f2f0, #000c40); */
+    /* background: linear-gradient(to right, #e8cbc0, #636fa4); */
+    /* background: linear-gradient(to right, #ee0979, #ff6a00);  */
+    /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+    background: linear-gradient(to right, #3e4044, #2d78f1); 
+    background: linear-gradient(to right, #3367bb, #3e4044 ); 
+
+
+}
+
+.slide{
+    background: linear-gradient(to right, #093028, hwb(156 31% 29%));
+    /* background: linear-gradient(to right, #e8cbc0, #636fa4); */
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container .box{
+    position: relative;
+    width: 50%;
+    height: 10%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.container .box h2{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.signupBtn, .signinBtn {
+    border-radius: 10px;
+}
+
+.form8x{
+    position: absolute;
+    left: 50px;
+    width: 350px;
+    height: 480px;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15); 
+    border-radius: 10px;
+    transition: 0.5s;
+    /* transition-delay: 0.1s; */
+    overflow: hidden;
+}
+
+.slide .form8x{
+    left: 400px;
+}
+
+.form8x .form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: 0.5; */
+    background: #fff;
+}
+
+.form8x .form.signupform {
+    top: 100%;
+    /* transition-delay: 1s; */
+} 
+
+.slide .form8x .form.signupform {
+    top: 0;
+    /* transition-delay: 0s; */
+} 
+
+.form8x .form .signinform {
+    top: 0;
+    /* transition-delay: 1s; */
+} 
+
+.slide .form8x.form.signinform {
+    top: -100%;
+    /* transition-delay: 0s; */
+} 
+
+.form8x .form form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    width: 100%;
+}
+
+.form8x .form form h3{
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+} 
+
+.form8x .form form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    outline: none;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    letter-spacing: 0.1em;;
+}
+
+.form8x .form form input[type='submit']{
+    background: #3e4044;
+    border: none;
+    color: #fff;
+    max-width: 100px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.form8x .signupfrom form input[type='submit']{
+    background: #4fb68d;
+}
+
+.forgot{
+    color: #333;
+    letter-spacing: 0.05em;
+    font-size: 0.8em ;      
+}
